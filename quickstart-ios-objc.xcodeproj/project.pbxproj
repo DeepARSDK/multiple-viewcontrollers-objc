@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9A4970F124FD07BF00DD9C86 /* DeepAR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A4970EF24FD07B600DD9C86 /* DeepAR.framework */; };
-		9A4970F224FD07BF00DD9C86 /* DeepAR.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9A4970EF24FD07B600DD9C86 /* DeepAR.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9A5916E5254B20350077B7F2 /* DeepARSharedManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5916E4254B20350077B7F2 /* DeepARSharedManager.m */; };
+		9A5916E8254B20AB0077B7F2 /* DeepAR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5916E6254B20A60077B7F2 /* DeepAR.framework */; };
+		9A5916E9254B20AB0077B7F2 /* DeepAR.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5916E6254B20A60077B7F2 /* DeepAR.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A1A1E14F23993CAC000E5E92 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A1E14E23993CAC000E5E92 /* AppDelegate.m */; };
 		A1A1E15523993CAC000E5E92 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A1E15423993CAC000E5E92 /* ViewController.m */; };
 		A1A1E15823993CAC000E5E92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1A1E15623993CAC000E5E92 /* Main.storyboard */; };
@@ -50,7 +51,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9A4970F224FD07BF00DD9C86 /* DeepAR.framework in Embed Frameworks */,
+				9A5916E9254B20AB0077B7F2 /* DeepAR.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -58,7 +59,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9A4970EF24FD07B600DD9C86 /* DeepAR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DeepAR.framework; sourceTree = SOURCE_ROOT; };
+		9A5916E3254B20350077B7F2 /* DeepARSharedManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeepARSharedManager.h; sourceTree = "<group>"; };
+		9A5916E4254B20350077B7F2 /* DeepARSharedManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeepARSharedManager.m; sourceTree = "<group>"; };
+		9A5916E6254B20A60077B7F2 /* DeepAR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DeepAR.framework; sourceTree = SOURCE_ROOT; };
 		A1A1E14A23993CAC000E5E92 /* quickstart-ios-objc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "quickstart-ios-objc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1A1E14D23993CAC000E5E92 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A1A1E14E23993CAC000E5E92 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -102,7 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A4970F124FD07BF00DD9C86 /* DeepAR.framework in Frameworks */,
+				9A5916E8254B20AB0077B7F2 /* DeepAR.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,7 +131,9 @@
 		A1A1E14C23993CAC000E5E92 /* quickstart-ios-objc */ = {
 			isa = PBXGroup;
 			children = (
-				9A4970EF24FD07B600DD9C86 /* DeepAR.framework */,
+				9A5916E6254B20A60077B7F2 /* DeepAR.framework */,
+				9A5916E3254B20350077B7F2 /* DeepARSharedManager.h */,
+				9A5916E4254B20350077B7F2 /* DeepARSharedManager.m */,
 				A1A1E16B239941D6000E5E92 /* Effects */,
 				A1A1E14D23993CAC000E5E92 /* AppDelegate.h */,
 				A1A1E14E23993CAC000E5E92 /* AppDelegate.m */,
@@ -276,6 +281,7 @@
 				A1A1E15523993CAC000E5E92 /* ViewController.m in Sources */,
 				A1A1E14F23993CAC000E5E92 /* AppDelegate.m in Sources */,
 				A1A1E16023993CAD000E5E92 /* main.m in Sources */,
+				9A5916E5254B20350077B7F2 /* DeepARSharedManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,7 +434,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "ai.deepar.quickstart-ios-objc";
+				PRODUCT_BUNDLE_IDENTIFIER = "ai.deepar.multi-vc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -451,7 +457,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "ai.deepar.quickstart-ios-objc";
+				PRODUCT_BUNDLE_IDENTIFIER = "ai.deepar.multi-vc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
